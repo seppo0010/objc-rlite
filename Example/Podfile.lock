@@ -1,6 +1,6 @@
 PODS:
   - Expecta (0.3.2)
-  - objc-rlite (0.1.0)
+  - objc-rlite (0.0.1)
   - Specta (0.3.2)
 
 DEPENDENCIES:
@@ -14,7 +14,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
-  objc-rlite: f1c9937ddfc778eba95aab5b974b4d88d49abfb2
+  objc-rlite: c6477f671d0daae5e497c42a84c330e3674214e6
   Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
 
 COCOAPODS: 0.35.0
