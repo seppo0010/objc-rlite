@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'objc-rlite', :exclusive => true do
+  pod "objc-rlite", :path => "../"
+end
+
+target 'Tests', :exclusive => true do
+  pod "objc-rlite", :path => "../"
+
+  pod 'Specta'
+  pod 'Expecta'
+end
