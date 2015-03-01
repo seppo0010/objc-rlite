@@ -9,30 +9,20 @@
 
 Pod::Spec.new do |s|
   s.name             = "objc-rlite"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of objc-rlite."
+  s.version          = "0.0.1"
+  s.summary          = "Objective-C wrapper for rlite"
   s.description      = <<-DESC
-                       An optional longer description of objc-rlite
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
                        DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/objc-rlite"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
-  s.license          = 'MIT'
+  s.homepage         = "https://github.com/seppo0010/objc-rlite"
+  s.license          = 'BSD'
   s.author           = { "Sebastian Waisbrot" => "seppo0010@gmail.com" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/objc-rlite.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://github.com/seppo0010/objc-rlite.git", :tag => s.version.to_s }
+  s.social_media_url = 'https://twitter.com/seppo0010'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'objc-rlite' => ['Pod/Assets/*.png']
-  }
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.public_header_files = 'Pod/Classes/**/*.h'
 end
