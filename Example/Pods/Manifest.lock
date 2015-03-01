@@ -1,0 +1,20 @@
+PODS:
+  - Expecta (0.3.2)
+  - objc-rlite (0.1.0)
+  - Specta (0.3.2)
+
+DEPENDENCIES:
+  - Expecta
+  - objc-rlite (from `../`)
+  - Specta
+
+EXTERNAL SOURCES:
+  objc-rlite:
+    :path: ../
+
+SPEC CHECKSUMS:
+  Expecta: ee641011fe10aa1855d487b40e4976dac50ec342
+  objc-rlite: f1c9937ddfc778eba95aab5b974b4d88d49abfb2
+  Specta: 698a58ffa5ec948327d3b92eab50ca58d7f4fbe8
+
+COCOAPODS: 0.35.0
