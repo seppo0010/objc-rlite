@@ -7,6 +7,7 @@
 //
 
 #import "ObjCHirliteViewController.h"
+#import <objc-rlite/ObjCHirlite.h>
 
 @interface ObjCHirliteViewController ()
 
@@ -17,13 +18,27 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
+    NSArray* paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* documentsDirectory = [paths objectAtIndex:0]; // Get documents folder
+    NSString* path = [documentsDirectory stringByAppendingPathComponent:@"mydb.rld"];
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    lastLaunch = [[UILabel alloc] initWithFrame:self.view.frame];
+    lastLaunch.textAlignment = NSTextAlignmentCenter;
+    lastLaunch.numberOfLines = 2;
+    [self.view addSubview:lastLaunch];
+
+    ObjCHirlite* rlite = [[ObjCHirlite alloc] initWithPath:path];
+    id time = [rlite command:@[@"get", @"previous"]];
+    [rlite command:@[@"set", @"previous", [NSNumber numberWithDouble:[NSDate timeIntervalSinceReferenceDate]]]];
+    if ([time isKindOfClass:[NSString class]]) {
+        NSDateFormatter* dateFormatter = [[NSDateFormatter alloc] init];
+        dateFormatter.dateStyle = NSDateFormatterLongStyle;
+        dateFormatter.timeStyle = NSDateFormatterLongStyle;
+        NSDate* date = [NSDate dateWithTimeIntervalSinceReferenceDate:[time doubleValue]];
+        lastLaunch.text = [NSString stringWithFormat:@"Last launch\n%@", [dateFormatter stringFromDate:date]];
+    } else {
+        lastLaunch.text = @"First launch!";
+    }
 }
 
 @end

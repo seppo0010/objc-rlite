@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ObjCHirliteViewController : UIViewController
+@interface ObjCHirliteViewController : UIViewController {
+    UILabel* lastLaunch;
+}
 
 @end
