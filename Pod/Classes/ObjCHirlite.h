@@ -16,7 +16,9 @@
 
 - (ObjCHirlite*) initWithPath:(NSString*)path;
 - (ObjCHirlite*) initWithPath:(NSString*)path encoding:(NSStringEncoding)encoding;
+
 - (id) command:(NSArray*)command;
+- (id) command:(NSArray*)command binary:(BOOL)binary;
 
 @property NSStringEncoding encoding;
 

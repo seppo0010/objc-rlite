@@ -50,10 +50,13 @@
     return nil;
 }
 
-- (id) objectFromReply:(rliteReply*)reply {
+- (id) objectFromReply:(rliteReply*)reply binary:(BOOL)binary {
     if (reply->type == RLITE_REPLY_STATUS || reply->type == RLITE_REPLY_STRING) {
         if (reply->type == RLITE_REPLY_STATUS && reply->len == 2 && memcmp(reply->str, "OK", 2) == 0) {
             return [NSNumber numberWithBool:TRUE];
+        }
+        if (binary) {
+            return [NSData dataWithBytes:reply->str length:reply->len];
         }
         return [[NSString alloc] initWithBytes:reply->str length:reply->len encoding:encoding];
     }
@@ -71,14 +74,14 @@
         size_t i;
         NSMutableArray* array = [NSMutableArray arrayWithCapacity:reply->elements];
         for (i = 0; i < reply->elements; i++) {
-            [array addObject:[self objectFromReply:reply->element[i]]];
+            [array addObject:[self objectFromReply:reply->element[i] binary:binary]];
         }
         return [array copy];
     }
     return nil;
 }
 
-- (id) command:(NSArray*)command {
+- (id) command:(NSArray*)command binary:(BOOL)binary {
     int i, argc;
     char **argv;
     size_t *argvlen;
@@ -99,8 +102,15 @@
 
     free(argv);
     free(argvlen);
-    return [self objectFromReply:reply];
+    id obj = [self objectFromReply:reply binary:binary];
+    rliteFreeReplyObject(reply);
+    return obj;
 }
+
+- (id) command:(NSArray*)command {
+    return [self command:command binary:NO];
+}
+
 
 - (void) dealloc {
     rliteFree(context);

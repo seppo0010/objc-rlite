@@ -34,6 +34,14 @@ describe(@"these will pass", ^{
         XCTAssertEqualObjects(value, reply);
     });
     
+    it(@"supports binary data", ^{
+        const char *data = "\0\1";
+        NSData* value = [NSData dataWithBytes:data length:2];
+        [rlite command:@[@"set", key, value]];
+        id reply = [rlite command:@[@"get", key] binary:true];
+        XCTAssert(memcmp(data, [reply bytes], sizeof(char) * 2) == 0, @"Expected binary data response to match data set");
+    });
+
     it(@"supports integer", ^{
         id reply = [rlite command:@[@"lpush", key, value, value]];
         XCTAssertEqualObjects([NSNumber numberWithInt:2], reply);

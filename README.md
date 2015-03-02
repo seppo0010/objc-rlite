@@ -40,6 +40,10 @@ Responses will be transformed into the corresponding objective-c class.
 Notice that retrieving a value that was set as a number will return a string
 object, since the number was serialized as a string.
 
+To retrieve binary data from the database set binary to true in the call to
+ObjCHirlite.command:binary: and the response will be an instance (or an array
+of instances) of NSData instead of NSString.
+
 ## Requirements
 
 ## Installation
