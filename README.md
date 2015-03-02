@@ -1,6 +1,6 @@
 # objc-rlite
 
-[![CI Status](http://img.shields.io/travis/Sebastian Waisbrot/objc-rlite.svg?style=flat)](https://travis-ci.org/Sebastian Waisbrot/objc-rlite)
+[![CI Status](http://img.shields.io/travis/seppo0010/objc-rlite.svg?style=flat)](https://travis-ci.org/seppo0010/objc-rlite)
 [![Version](https://img.shields.io/cocoapods/v/objc-rlite.svg?style=flat)](http://cocoadocs.org/docsets/objc-rlite)
 [![License](https://img.shields.io/cocoapods/l/objc-rlite.svg?style=flat)](http://cocoadocs.org/docsets/objc-rlite)
 [![Platform](https://img.shields.io/cocoapods/p/objc-rlite.svg?style=flat)](http://cocoadocs.org/docsets/objc-rlite)
