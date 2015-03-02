@@ -41,7 +41,7 @@ describe(@"these will pass", ^{
 
     it(@"supports error", ^{
         id reply = [rlite command:@[@"set", key]];
-        XCTAssertEqualObjects([reply class], [NSException class]);
+        XCTAssert([reply isKindOfClass:[NSException class]], @"Expected invalid query to get an exception, got %@ instead", NSStringFromClass([reply class]));
     });
     
     it(@"supports array", ^{
