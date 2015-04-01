@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "objc-rlite"
-  s.version          = "0.0.1.2"
+  s.version          = "0.1.0"
   s.summary          = "Objective-C wrapper for rlite"
   s.description      = <<-DESC
                        For more information on rlite visit
