@@ -272,8 +272,6 @@
 		C9EE74E31AABB301005F7038 /* ltm.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE74781AABB301005F7038 /* ltm.c */; };
 		C9EE74E41AABB301005F7038 /* ltm.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE74791AABB301005F7038 /* ltm.h */; };
 		C9EE74E51AABB301005F7038 /* ltm.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE74791AABB301005F7038 /* ltm.h */; };
-		C9EE74E61AABB301005F7038 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747A1AABB301005F7038 /* lua.c */; };
-		C9EE74E71AABB301005F7038 /* lua.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747A1AABB301005F7038 /* lua.c */; };
 		C9EE74E81AABB301005F7038 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE747B1AABB301005F7038 /* lua.h */; };
 		C9EE74E91AABB301005F7038 /* lua.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE747B1AABB301005F7038 /* lua.h */; };
 		C9EE74EA1AABB301005F7038 /* lua_bit.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747C1AABB301005F7038 /* lua_bit.c */; };
@@ -284,8 +282,6 @@
 		C9EE74EF1AABB301005F7038 /* lua_cmsgpack.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747E1AABB301005F7038 /* lua_cmsgpack.c */; };
 		C9EE74F01AABB301005F7038 /* lua_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747F1AABB301005F7038 /* lua_struct.c */; };
 		C9EE74F11AABB301005F7038 /* lua_struct.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE747F1AABB301005F7038 /* lua_struct.c */; };
-		C9EE74F21AABB301005F7038 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE74801AABB301005F7038 /* luac.c */; };
-		C9EE74F31AABB301005F7038 /* luac.c in Sources */ = {isa = PBXBuildFile; fileRef = C9EE74801AABB301005F7038 /* luac.c */; };
 		C9EE74F41AABB301005F7038 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE74811AABB301005F7038 /* luaconf.h */; };
 		C9EE74F51AABB301005F7038 /* luaconf.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE74811AABB301005F7038 /* luaconf.h */; };
 		C9EE74F61AABB301005F7038 /* lualib.h in Headers */ = {isa = PBXBuildFile; fileRef = C9EE74821AABB301005F7038 /* lualib.h */; };
@@ -577,13 +573,11 @@
 		C9EE74771AABB301005F7038 /* ltablib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltablib.c; sourceTree = "<group>"; };
 		C9EE74781AABB301005F7038 /* ltm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ltm.c; sourceTree = "<group>"; };
 		C9EE74791AABB301005F7038 /* ltm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ltm.h; sourceTree = "<group>"; };
-		C9EE747A1AABB301005F7038 /* lua.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua.c; sourceTree = "<group>"; };
 		C9EE747B1AABB301005F7038 /* lua.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lua.h; sourceTree = "<group>"; };
 		C9EE747C1AABB301005F7038 /* lua_bit.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_bit.c; sourceTree = "<group>"; };
 		C9EE747D1AABB301005F7038 /* lua_cjson.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_cjson.c; sourceTree = "<group>"; };
 		C9EE747E1AABB301005F7038 /* lua_cmsgpack.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_cmsgpack.c; sourceTree = "<group>"; };
 		C9EE747F1AABB301005F7038 /* lua_struct.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lua_struct.c; sourceTree = "<group>"; };
-		C9EE74801AABB301005F7038 /* luac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = luac.c; sourceTree = "<group>"; };
 		C9EE74811AABB301005F7038 /* luaconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = luaconf.h; sourceTree = "<group>"; };
 		C9EE74821AABB301005F7038 /* lualib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lualib.h; sourceTree = "<group>"; };
 		C9EE74831AABB301005F7038 /* lundump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lundump.c; sourceTree = "<group>"; };
@@ -958,13 +952,11 @@
 				C9EE74771AABB301005F7038 /* ltablib.c */,
 				C9EE74781AABB301005F7038 /* ltm.c */,
 				C9EE74791AABB301005F7038 /* ltm.h */,
-				C9EE747A1AABB301005F7038 /* lua.c */,
 				C9EE747B1AABB301005F7038 /* lua.h */,
 				C9EE747C1AABB301005F7038 /* lua_bit.c */,
 				C9EE747D1AABB301005F7038 /* lua_cjson.c */,
 				C9EE747E1AABB301005F7038 /* lua_cmsgpack.c */,
 				C9EE747F1AABB301005F7038 /* lua_struct.c */,
-				C9EE74801AABB301005F7038 /* luac.c */,
 				C9EE74811AABB301005F7038 /* luaconf.h */,
 				C9EE74821AABB301005F7038 /* lualib.h */,
 				C9EE74831AABB301005F7038 /* lundump.c */,
@@ -1433,7 +1425,6 @@
 				C9EE74A91AABB301005F7038 /* ldump.c in Sources */,
 				DF537711D584661125A346B0 /* ObjCHirlite.m in Sources */,
 				BE5381F60BC1082A94D002FD /* Pods-objc-rlite-objc-rlite-dummy.m in Sources */,
-				C9EE74F31AABB301005F7038 /* luac.c in Sources */,
 				C9EE74FD1AABB301005F7038 /* lvm.c in Sources */,
 				C9EE74CD1AABB301005F7038 /* loslib.c in Sources */,
 				C9EE74C91AABB301005F7038 /* lopcodes.c in Sources */,
@@ -1457,7 +1448,6 @@
 				E9E253908D8F6D0910069A8F /* page_key.c in Sources */,
 				C9EE74C51AABB301005F7038 /* lobject.c in Sources */,
 				706E48E08F98F104665203CA /* page_list.c in Sources */,
-				C9EE74E71AABB301005F7038 /* lua.c in Sources */,
 				C9EE74F11AABB301005F7038 /* lua_struct.c in Sources */,
 				C9EE74ED1AABB301005F7038 /* lua_cjson.c in Sources */,
 				4925E5DFF34F6ECDEB91B354 /* page_long.c in Sources */,
@@ -1556,7 +1546,6 @@
 				C9EE74A81AABB301005F7038 /* ldump.c in Sources */,
 				89F21627829AF13D8FA9FB0D /* ObjCHirlite.m in Sources */,
 				5189A4E5603C20938103F269 /* Pods-Tests-objc-rlite-dummy.m in Sources */,
-				C9EE74F21AABB301005F7038 /* luac.c in Sources */,
 				C9EE74FC1AABB301005F7038 /* lvm.c in Sources */,
 				C9EE74CC1AABB301005F7038 /* loslib.c in Sources */,
 				C9EE74C81AABB301005F7038 /* lopcodes.c in Sources */,
@@ -1580,7 +1569,6 @@
 				B63D981C9BEA40B6B8F75A92 /* page_key.c in Sources */,
 				C9EE74C41AABB301005F7038 /* lobject.c in Sources */,
 				7DE8CF10777A601AFE0CCE69 /* page_list.c in Sources */,
-				C9EE74E61AABB301005F7038 /* lua.c in Sources */,
 				C9EE74F01AABB301005F7038 /* lua_struct.c in Sources */,
 				C9EE74EC1AABB301005F7038 /* lua_cjson.c in Sources */,
 				8EF5191D2C3E8B7B01213CFE /* page_long.c in Sources */,
