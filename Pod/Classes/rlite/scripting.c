@@ -50,7 +50,7 @@
 void sha1hex(char *digest, char *script, size_t len);
 static int setScript(rliteClient *c, char *script, long scriptlen) {
 	int retval;
-	char hash[40];
+	char hash[41];
 	sha1hex(hash, script, scriptlen);
 	int selected_database = c->context->db->selected_database;
 	c->context->db->selected_database = c->context->db->number_of_databases;
